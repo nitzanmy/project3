@@ -1,0 +1,60 @@
+/* Global Color Variables */
+:root {
+    --lightbeigh0:#F9F8F6; 
+    --lightbeigh1:#EFE9E3; 
+    --lightbrown:#D9CFC7;
+    --darkgray:#A3968D;
+    --lightgray:#edede9;
+    --lightgray1:#dcdcdd;
+    --lightblack:#403d39;
+    --lightblue0:#cce3de;
+    --lightblue1:#bbdefb;
+    --lightblue2:#90caf9;
+    --logo:#968069;
+    --button:#A69079;
+}
+
+/* Oron Light */
+@font-face {
+    font-family: 'Oron';
+    src: url('../Oron/Oron-Light.otf') format('opentype');
+    font-weight: 300;         
+    font-style: normal;
+}
+
+/* Oron Regular/Medium */
+@font-face {
+    font-family: 'Oron';
+    src: url('../Oron/Oron-Medium.otf') format('opentype');
+    font-weight: 400;         
+    font-style: normal;
+}
+
+/* Oron Bold */
+@font-face {
+    font-family: 'Oron';
+    src: url('../Oron/Oron-Bold.otf') format('opentype');
+    font-weight: 700;         
+    font-style: normal;
+}
+
+/* Oron Black */
+@font-face {
+    font-family: 'Oron';
+    src: url('../Oron/Oron-Black.otf') format('opentype');
+    font-weight: 900;          
+    font-style: normal;
+}
+
+/* Global Font Settings*/
+html, body {
+    font-family: 'Oron', sans-serif;
+    font-weight: 300;
+}
+
+/* Global Body Settings */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightbeigh1);
+}

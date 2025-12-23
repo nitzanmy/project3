@@ -1,0 +1,108 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for image and login box */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-section {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Image next to the Box */
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-image {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Box */
+.login-box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--lightbeigh0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 80px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: right;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/*Button design */
+.login-box button {
+    padding: 10px 20px;
+    background-color: var(--button);
+    color: var(--lightbeigh0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background-color: var(--lightbeigh0);
+    border: 1.5px solid var(--button);
+    color: var(--button);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+/* Forgot password */
+.forgot-pass {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}

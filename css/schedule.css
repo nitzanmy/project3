@@ -1,0 +1,235 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* headers */
+.headers {
+    color: var(--lightblack) !important;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 55px;
+}
+
+/* notice board */
+.notice-board {
+    background-color: var(--lightblue1);
+    color: var(--lightblack);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.notice-board h2 {
+    margin-top: 0;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* individual notice item */
+.notice-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+/* navigation Weeks buttons */
+.week-navigation {
+    display: flex;
+    justify-content: space-between;
+    /* Pushe the buttons to the edges (right and left)*/
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    background-color: var(--button);
+    color: var(--lightbeigh0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn:hover {
+    background-color: var(--lightbeigh0);
+    border: 1.15px solid var(--button);
+    color: var(--button);
+}
+
+/* Schedule Container */
+.schedule-container {
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
+    padding: 0 10px;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.day-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.date-display {
+    text-align: center;
+    font-weight: bold;
+    color: var(--logo);
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.day-header {
+    text-align: center;
+    background-color: var(--button);
+    color: var(--lightbeigh0);
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.day-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    min-height: 400px;
+    flex: 1;
+}
+
+/* Class Card */
+.class-card {
+    background-color: var(--lightgray);
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.class-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--logo);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class-time {
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 17px;
+}
+
+.class-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--lightblack);
+}
+
+/*number of participants*/
+.class-details {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Zoom Link */
+.zoom-tag {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 2px 6px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.zoom-tag:hover {
+    background-color: var(--lightblue1);
+}
+
+/* Registration Button */
+.register-btn {
+    background-color: #cfe1b9;
+    color: var(--lightblack);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+
+.register-btn:hover {
+    background-color: #adc178;
+}
+
+/* Waitlist Button */
+.register-btn-waitlist {
+    background-color: var(--lightblue1);
+    color: var(--lightblack);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+
+.register-btn-waitlist:hover {
+    background-color: var(--lightblue2)
+}
+
+@media (max-width: 768px) {
+    .week-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .date-display {
+        margin-top: 20px;
+    }
+}
+
+/* Unregister button (when the user is already registered) */
+.register-btn.registered {
+    background-color: #e74c3c ;
+    color: white ;
+    border: 1px solid #c0392b;
+}
+
+.register-btn.registered:hover {
+    background-color: #c0392b;
+    border-color: #a93226 ;
+}
