@@ -14,13 +14,6 @@
     display: block;
 }
 
-/* Main title */
-#headers {
-    margin-top: 20px;
-    font-size: 55px;
-    font-weight: 400;
-}
-
 /* About section */
 .about {
     margin-bottom: 5px;
@@ -136,7 +129,7 @@
 }
 
 .contact a:visited {
-    color: #ce93d8 ;
+    color: #ce93d8 !important;
 }
 
 /* Animation trigger - fade in on page load */
@@ -154,4 +147,5 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
