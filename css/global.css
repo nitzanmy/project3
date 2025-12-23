@@ -45,16 +45,38 @@
     font-weight: 900;          
     font-style: normal;
 }
-
-/* Global Font Settings*/
-html, body {
-    font-family: 'Oron', sans-serif;
-    font-weight: 300;
-}
-
+    
 /* Global Body Settings */
 body {
     margin: 0;
     padding: 0;
     background-color: var(--lightbeigh1);
+    font-family: 'Oron', sans-serif;
+    font-weight: 300;
 }
+
+.headers{
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+/* Base button style*/
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1.4px solid var(--button);
+  background-color: var(--button);
+  color: var(--lightbeigh0);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Hover state*/
+.btn:hover {
+  background-color: var(--lightbeigh0);
+  color: var(--button);
+  border: 1.4px solid var(--button);
+}
+
