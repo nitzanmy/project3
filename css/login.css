@@ -1,3 +1,8 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
 
 /* Main container for image and login box */
 .main-container {
@@ -62,11 +67,27 @@
     border-radius: 5px;
 }
 
-/*Buttons design */
-.btn-login-submit,.btn-login-register {
+/*Button design */
+.login-box button {
     padding: 10px 20px;
+    background-color: var(--button);
+    color: var(--lightbeigh0);
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     width: 100%;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background-color: var(--lightbeigh0);
+    border: 1.5px solid var(--button);
+    color: var(--button);
+}
+
+.secondary-btn {
+    background-color: transparent;
     margin-top: 10px;
 }
 
@@ -84,5 +105,4 @@
 h1 {
     color: #333;
     margin-bottom: 20px;
-
 }
